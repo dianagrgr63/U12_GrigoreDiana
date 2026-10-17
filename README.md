@@ -1,6 +1,6 @@
 # MEDE U12 · Statie × zi, Bucuresti, 2025
 
-**intrebare:** Ce tipuri de zile poluate (PM10, NO₂) există in Bucuresti in 2025 si cat le explica vremea?
+**intrebare:** Ce tipuri de zile poluate (PM10, NO₂) exista in Bucuresti in 2025 si cat le explica vremea?
 
 **Surse**
 - calitateaer.ro (RNMCA): PM10 si NO₂, valori orare, rapoarte „valori date" exportate per statie
