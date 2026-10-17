@@ -1,24 +1,24 @@
-# MEDE U12 · Stație × zi, București, 2025
+# MEDE U12 · Statie × zi, Bucuresti, 2025
 
-**Întrebare:** Au toate anotimpurile (iarna, primăvara, vara, toamna) aceleași tipuri de zile poluate (PM10, NO₂) în București în 2025?
+**intrebare:** Ce tipuri de zile poluate (PM10, NO₂) există in Bucuresti in 2025 si cat le explica vremea?
 
 **Surse**
-- calitateaer.ro (RNMCA): PM10 și NO₂, valori orare, rapoarte „valori date" exportate per stație
-- Open-Meteo Historical Weather API: temperatură, precipitații, viteza vântului, orar
+- calitateaer.ro (RNMCA): PM10 si NO₂, valori orare, rapoarte „valori date" exportate per statie
+- Open-Meteo Historical Weather API: temperatura, precipitatii, viteza vantului, orar
 
-**Unitate de analiză:** stație × zi (și stație × oră)
+**Unitate de analiza:** statie × zi (si statie × ora)
 
 ## Rulare
 ```
 pip install -r requirements.txt
 jupyter notebook notebooks/01_load_align.ipynb   # Restart & Run All
 ```
-Pune în `data/raw/` rapoartele orare de la calitateaer (`B3 orar.xls`, `B4 orar.xls`, `B6 orar.xls`) și fișierul Open-Meteo (`open-meteo*.xlsx`). Fișierele originale nu se modifică.
+Pune in `data/raw/` rapoartele orare de la calitateaer (`B3 orar.xls`, `B4 orar.xls`, `B6 orar.xls`) si fisierul Open-Meteo (`open-meteo*.xlsx`). Fisierele originale nu se modifica.
 
 ## Rezultate (`data/processed/`)
-- `hourly_aligned.csv`: stație × oră (NO₂, PM10, T, P, W)
-- `daily_aligned.csv`: stație × zi (zi validă = cel puțin 18 din 24 de ore valide)
+- `hourly_aligned.csv`: statie × ora (NO₂, PM10, T, P, W)
+- `daily_aligned.csv`: statie × zi (zi valida = cel putin 18 din 24 de ore valide)
 - `coverage_report.csv`, `coverage_by_season.csv`: raportul de acoperire
 
-## Stații
-B-3, B-4, B-6; maparea la `location_id`-urile Open-Meteo și coordonatele stațiilor se completează aici și în `datacard_U12.md`.
+## Statii
+B-3, B-4, B-6; maparea la `location_id`-urile Open-Meteo si coordonatele statiilor se completeaza aici si in `datacard_U12.md`.
