@@ -1,0 +1,27 @@
+trasatura,grup,sursa,definitie,unitate,transformare
+NO2_mean,calitateaer.ro (poluanti),"calitateaer.ro, NO₂ (42i), orar",medie zilnica (≥ 18 ore valide),µg/m³,"log1p, apoi z-score"
+NO2_max,calitateaer.ro (poluanti),"calitateaer.ro, NO₂ (42i), orar",maxim zilnic,µg/m³,"log1p, apoi z-score"
+NO2_min,calitateaer.ro (poluanti),"calitateaer.ro, NO₂ (42i), orar",minim zilnic,µg/m³,"log1p, apoi z-score"
+NO2_std,calitateaer.ro (poluanti),"calitateaer.ro, NO₂ (42i), orar",abatere standard zilnica,µg/m³,"log1p, apoi z-score"
+NO2_morning,calitateaer.ro (poluanti),"calitateaer.ro, NO₂ (42i), orar",medie orele 06–09 (≥ 3 ore valide),µg/m³,"log1p, apoi z-score"
+NO2_evening,calitateaer.ro (poluanti),"calitateaer.ro, NO₂ (42i), orar",medie orele 17–21 (≥ 3 ore valide),µg/m³,"log1p, apoi z-score"
+PM10_mean,calitateaer.ro (poluanti),"calitateaer.ro, PM10 (Sharp 5030), orar",medie zilnica (≥ 18 ore valide),µg/m³,"log1p, apoi z-score"
+PM10_max,calitateaer.ro (poluanti),"calitateaer.ro, PM10 (Sharp 5030), orar",maxim zilnic,µg/m³,"log1p, apoi z-score"
+PM10_min,calitateaer.ro (poluanti),"calitateaer.ro, PM10 (Sharp 5030), orar",minim zilnic,µg/m³,z-score
+PM10_std,calitateaer.ro (poluanti),"calitateaer.ro, PM10 (Sharp 5030), orar",abatere standard zilnica,µg/m³,"log1p, apoi z-score"
+PM10_morning,calitateaer.ro (poluanti),"calitateaer.ro, PM10 (Sharp 5030), orar",medie orele 06–09 (≥ 3 ore valide),µg/m³,"log1p, apoi z-score"
+PM10_evening,calitateaer.ro (poluanti),"calitateaer.ro, PM10 (Sharp 5030), orar",medie orele 17–21 (≥ 3 ore valide),µg/m³,"log1p, apoi z-score"
+PM10_NO2_ratio,calitateaer.ro (poluanti),"calitateaer.ro, derivata din PM10 si NO₂",PM10_mean / NO2_mean,–,"log1p, apoi z-score"
+NO2_lag1,calitateaer.ro (poluanti),"calitateaer.ro, NO₂ (42i), orar",media zilnica din ziua precedenta,µg/m³,"log1p, apoi z-score"
+PM10_lag1,calitateaer.ro (poluanti),"calitateaer.ro, PM10 (Sharp 5030), orar",media zilnica din ziua precedenta,µg/m³,"log1p, apoi z-score"
+T_mean,Open-Meteo (meteo),"Open-Meteo, temperature_2m, orar",medie zilnica,°C,z-score
+T_max,Open-Meteo (meteo),"Open-Meteo, temperature_2m, orar",maxim zilnic,°C,z-score
+T_min,Open-Meteo (meteo),"Open-Meteo, temperature_2m, orar",minim zilnic,°C,z-score
+T_range,Open-Meteo (meteo),"Open-Meteo, temperature_2m, orar",T_max − T_min,°C,z-score
+P_sum,Open-Meteo (meteo),"Open-Meteo, precipitation, orar",suma zilnica,mm,"log1p, apoi z-score"
+P_hours,Open-Meteo (meteo),"Open-Meteo, precipitation, orar","nr. de ore cu precipitatii > 0,1 mm",ore,"log1p, apoi z-score"
+P_sum_3d,Open-Meteo (meteo),"Open-Meteo, precipitation, orar",suma pe ziua curenta si 2 zile anterioare (primele 2 zile: suma partiala),mm,"log1p, apoi z-score"
+W_mean,Open-Meteo (meteo),"Open-Meteo, wind_speed_10m, orar (convertit in m/s)",medie zilnica,m/s,"log1p, apoi z-score"
+W_max,Open-Meteo (meteo),"Open-Meteo, wind_speed_10m, orar (convertit in m/s)",maxim zilnic,m/s,"log1p, apoi z-score"
+W_calm_hours,Open-Meteo (meteo),"Open-Meteo, wind_speed_10m, orar (convertit in m/s)",nr. de ore cu vant < 2 m/s,ore,z-score
+is_weekend,calendar,calendar (data),1 daca ziua e sambata sau duminica,0/1,niciuna (binara)
