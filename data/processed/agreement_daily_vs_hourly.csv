@@ -1,0 +1,2 @@
+zile_comune,ARI_zilnic_vs_orar,NMI_zilnic_vs_orar,NMI_anotimp_zilnic,NMI_anotimp_orar,NMI_statie_zilnic,NMI_statie_orar,anomalii_zilnice_consens,suprapunere_anomalii_(top_n_zile_orare),Jaccard_anomalii,zile_cu_ore_anormale_>=25%
+1019,0.217,0.266,0.212,0.021,0.021,0.064,37,11,0.175,30
